@@ -69,11 +69,11 @@ class Predictor:
 
     def download_model(self, model_repo):
         
-        #csv_path = huggingface_hub.hf_hub_download( model_repo, LABEL_FILENAME,)
-        csv_path = "./models/" + LABEL_FILENAME
+        csv_path = huggingface_hub.hf_hub_download( model_repo, LABEL_FILENAME,)
+        #csv_path = "./models/" + LABEL_FILENAME
 
-        #model_path = huggingface_hub.hf_hub_download( model_repo, MODEL_FILENAME,)
-        model_path = "./models/" + MODEL_FILENAME
+        model_path = huggingface_hub.hf_hub_download( model_repo, MODEL_FILENAME,)
+        #model_path = "./models/" + MODEL_FILENAME
         
         return csv_path, model_path
 
